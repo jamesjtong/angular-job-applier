@@ -1,1 +1,52 @@
-<p>This is the coverletter view.</p>
+  <h1>Welcome to Cover Letter Generator</h1>
+  <h4><em>Start filling out the form and watch the magic happen below</em></h4>
+
+  <div ng-controller="CoverletterCtrl">
+    <p>
+      <ol>
+        <li>Company You are Applying for <input type="text" ng-model="companyName"></li>
+        <li>Position <input type="text" ng-model="position"></li>
+        <li>Your Name <input type="text" ng-model="yourName"></li>
+        <li>Your Email <input type="text" ng-model="yourEmail"></li>
+        <li>Your Phone Number ex: 666-666-6666 <input type="text" ng-model="yourPhoneNumber"></li>
+        <li>Thesis Sentence ex: I can be both a positive force and a success at XYZ company as I have a strong interest in X field, a history of success, and a great work ethic. <input type="text" ng-model="thesis"></li>
+        <li> A few sentences about the company for your intro (think current news or something interesting)
+          <ul>
+            <li><input type="text" ng-model="sen1"></li>
+            <li><input type="text" ng-model="sen2"></li>
+            <li><input type="text" ng-model="sen3"></li>
+          </ul>
+        </li>
+
+        <li>A few sentences about yourself and what value you can provide (3 min)
+          <ul>
+            <li><input type="text" ng-model="sen4"></li>
+            <li><input type="text" ng-model="sen5"></li>
+            <li><input type="text" ng-model="sen6"></li>
+            <li><input type="text" ng-model="sen7"></li>
+            <li><input type="text" ng-model="sen8"></li>
+            <li><input type="text" ng-model="sen9"></li>
+          </ul>
+        </li>
+
+
+        <li><button ng-click="showCover()">Generate Formatted Cover Letter</button>
+        </li>
+      </ol>
+    </p>
+    <article><h4>Your generated Cover Letter:</h4>
+      <p ng-show="companyName">Dear {{companyName}} Human Resource Department,</p><br>
+
+      <p><span ng-show="position">I would like to express my interest in the {{position}} position at </span><span ng-show="companyName">{{companyName}}. </span><span ng-show="sen1">{{sen1}}. </span><span ng-show="sen2">{{sen2}}. </span><span ng-show="sen3">{{sen3}}. </span><span ng-show="thesis">{{thesis}}. </span></p>
+
+      <p><span ng-show="sen4">{{sen4}}. </span><span ng-show="sen5">{{sen5}}. </span><span ng-show="sen6">{{sen6}}.</span><span ng-show="sen7">{{sen7}}.</span><span ng-show="sen8">{{sen8}}.</span><span ng-show="sen9">{{sen9}}.</span></p>
+
+      <p ng-show="yourPhoneNumber || yourEmail">Please consider reviewing my attached resume as it can provide more information. I hope to have an opportunity to further discuss my qualifications with your company. If you have any questions, please feel free to contact me by phone ({{yourPhoneNumber}}) or email({{yourEmail}}). Thank you for your consideration.</p><br>
+      <div ng-show="yourName || yourPhoneNumber ||yourEmail">Sincerely,</div>
+      <footer>
+        <div>{{yourName}}</div>
+        <div>{{yourPhoneNumber}}</div>
+        <div>{{yourEmail}}</div>
+      </footer>
+    </article>
+  </div>
