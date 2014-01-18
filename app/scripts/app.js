@@ -16,6 +16,14 @@ angular.module('ultimateJobApplierApp', [
         templateUrl: 'views/coverletter.html',
         controller: 'CoverletterCtrl'
       })
+      .when('/thankyou', {
+        templateUrl: 'views/thankyou.html',
+        controller: 'ThankyouCtrl'
+      })
+      .when('/interview', {
+        templateUrl: 'views/interview.html',
+        controller: 'InterviewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
