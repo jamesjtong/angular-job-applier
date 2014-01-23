@@ -1,8 +1,10 @@
-<h1>Welcome to Interview Prep</h1>
-<p ng-model="question.value">{{question.value}}</p>
-<button ng-click="getQuestion()">Get Question</button>
- <button ng-click="stop()">Pause</button>
+<h3>Welcome to Interview Prep</h3>
+<em>There are six questions asked in almost every interview, click Get Next Question to Begin</em><br><br><br>
+<h1 ng-model="question.value" class="text-center">{{question.value}}</h2>
+<button ng-click="getQuestion()" class="btn btn-primary" ng-hide="interviewQuestions.length === 0">Get Next Question</button>
 <br><br><br><br><br>
 
 <header>
-<div> Time spent responding to this question: {{counter}} </div>
+<div> Total time spent on this interview: {{counter}} </div>
+<br>
+ <button ng-click="stop()">End Interview Here and Stop Your Time</button>
