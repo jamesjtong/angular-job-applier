@@ -7,4 +7,5 @@ angular.module('ultimateJobApplierApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.myObjects = [{name: "sen1"},{name: "sen2"},{name: "sen3"}];
   });

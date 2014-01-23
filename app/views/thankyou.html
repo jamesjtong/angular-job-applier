@@ -5,6 +5,7 @@
     <p>
       <ol>
         <li>Company You are Applying for <input type="text" ng-model="companyName"></li>
+        <li>Person You Interviewed With <input type="text" ng-model="personName"></li>
         <li>Position <input type="text" ng-model="position"></li>
         <li>Your Name <input type="text" ng-model="yourName"></li>
         <li>Your Email <input type="text" ng-model="yourEmail"></li>
@@ -34,8 +35,8 @@
         </li>
       </ol>
     </p>
-    <article><h4>Your generated Cover Letter:</h4>
-      <p ng-show="companyName">Dear {{companyName}} Human Resource Department,</p><br>
+    <article><h4>Your generated Thank You Letter:</h4>
+      <p ng-show="personName">Dear {{personName}},</p><br>
 
       <p><span ng-show="position">I would like to express my interest in the {{position}} position at </span><span ng-show="companyName">{{companyName}}. </span><span ng-show="sen1">{{sen1}}. </span><span ng-show="sen2">{{sen2}}. </span><span ng-show="sen3">{{sen3}}. </span><span ng-show="thesis">{{thesis}}. </span></p>
 
