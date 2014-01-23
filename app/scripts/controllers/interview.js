@@ -10,7 +10,8 @@ angular.module('ultimateJobApplierApp')
       'Walk me through your projects?',
       'What questions do you have for me?'
     ];
-    $scope.randQuestion = function(){
-      return $scope.interviewQuestions[0];
+    $scope.question = {value: ''};
+    $scope.getQuestion = function(){
+      $scope.question.value = $scope.interviewQuestions.shift();
     };
   });
