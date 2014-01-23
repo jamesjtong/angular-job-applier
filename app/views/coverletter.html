@@ -17,23 +17,19 @@
             <li><input type="text" ng-model="sen3"></li>
           </ul>
         </li>
-<!-- TESTING AREA -->
-        <li> Test this
-          <ul ng-repeat="sen in myObjects">
-            <li><input type="text" ng-model="sen.name"></li>
-          </ul>
-        </li>
-        <p ng-show="myObjects[0].name">{{myObjects[0].name}}sfdds</p>
-<!-- TESTING AREA -->
 
-<!-- TESTING AREA -->
         <li> Test this
-          <ul ng-repeat="sen in myObjects">
+          <ul ng-repeat="sen in firstP">
             <li><input type="text" ng-model="sen.name"></li>
           </ul>
+          <ul>
+            <button ng-click="addP1()">Add Additional sentence to Intro</button>
+          </ul>
         </li>
-        <p ng-show="myObjects[0].name">{{myObjects[0].name}}sfdds</p>
-<!-- TESTING AREA -->
+
+        <p ng-show="firstP[0].name">{{firstP[0].name}}sfdds</p>
+        <p ng-show="firstP[1].name">{{firstP[1].name}}sfdds</p>
+        <p ng-show="firstP[2].name">{{firstP[2].name}}sfdds</p>
 
         <li>A few sentences about yourself and what value you can provide (3 min)
           <ul>

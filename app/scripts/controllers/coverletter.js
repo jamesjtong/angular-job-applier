@@ -7,5 +7,12 @@ angular.module('ultimateJobApplierApp')
       'AngularJS',
       'Karma'
     ];
-    $scope.myObjects = [{name: "sen1"},{name: "sen2"},{name: "sen3"}];
+    $scope.firstP = [{name: ''},{name: ''},{name: ''}];
+    $scope.secondP = [{name: ''},{name: ''},{name: ''}];
+    $scope.addP1 = function(){
+      $scope.firstP.push({name: ''});
+    };
+    $scope.addP2 = function(){
+      $scope.secondP.push({name: ''});
+    };
   });
