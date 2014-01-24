@@ -9,7 +9,6 @@
         <li>Your Name <input type="text" ng-model="yourName"></li>
         <li>Your Email <input type="text" ng-model="yourEmail"></li>
         <li>Your Phone Number ex: 666-666-6666 <input type="text" ng-model="yourPhoneNumber"></li>
-        <li>Thesis Sentence ex: I can be both a positive force and a success at XYZ company as I have a strong interest in X field, a history of success, and a great work ethic. <input type="text" ng-model="thesis"></li>
         <li> A few sentences about the company for your intro (think current news or something interesting).Why you are writing (your interest and general qualifications)
           <ul ng-repeat="sen in firstP">
             <li><input type="text" ng-model="sen.name"></li>
@@ -19,7 +18,7 @@
             <button ng-click="removeP1()">Remove sentence field</button>
           </ul>
         </li>
-
+        <li>Thesis Sentence ex: I can be both a positive force and a success at XYZ company as I have a strong interest in X field, a history of success, and a great work ethic. <input type="text" ng-model="thesis"></li>
         <li> A few sentences about yourself and what value you can provide. Why you are qualified (highlighting specific accomplishments) (3 min)
           <ul ng-repeat="sen in secondP">
             <li><input type="text" ng-model="sen.name"></li>
@@ -29,11 +28,12 @@
             <button ng-click="removeP2()">Remove sentence field</button>
           </ul>
         </li>
-
-        <li><button ng-click="showCover()">Generate Formatted Cover Letter</button>
-        </li>
+<!--         <li><button ng-click="showCover()">Generate Formatted Cover Letter</button>
+        </li> -->
       </ol>
     </div>
+
+
     <div class="col-lg-8">
       <h4>Your generated Cover Letter:</h4>
       <p ng-show="companyName">Dear {{companyName}} Human Resource Department,</p><br>
