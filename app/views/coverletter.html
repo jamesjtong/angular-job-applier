@@ -26,10 +26,12 @@
             <button ng-click="addP1()">Add Additional sentence to Intro</button>
           </ul>
         </li>
-
-        <p ng-show="firstP[0].name">{{firstP[0].name}}sfdds</p>
+<!--         <div ng-repeat="sen in firstP">
+          <li ng-show="firstP[$index].name"> {{sen.name}} </li>
+        </div> -->
+<!--         <p ng-show="firstP[0].name">{{firstP[0].name}}sfdds</p>
         <p ng-show="firstP[1].name">{{firstP[1].name}}sfdds</p>
-        <p ng-show="firstP[2].name">{{firstP[2].name}}sfdds</p>
+        <p ng-show="firstP[2].name">{{firstP[2].name}}sfdds</p> -->
 
         <li>A few sentences about yourself and what value you can provide (3 min)
           <ul>
@@ -51,6 +53,16 @@
       <p ng-show="companyName">Dear {{companyName}} Human Resource Department,</p><br>
 
       <p><span ng-show="position">I would like to express my interest in the {{position}} position at </span><span ng-show="companyName">{{companyName}}. </span><span ng-show="sen1">{{sen1}}. </span><span ng-show="sen2">{{sen2}}. </span><span ng-show="sen3">{{sen3}}. </span><span ng-show="thesis">{{thesis}}. </span></p>
+
+      <p><span ng-repeat="sen in firstP">
+          <li ng-show="firstP[$index].name"> {{sen.name}} </li>
+        </span>
+
+      <p><div ng-repeat="sen in firstP">
+          <span ng-show="firstP[$index].name"> {{sen.name}} </span>
+        </div>
+      </p>
+
 
       <p><span ng-show="sen4">{{sen4}}. </span><span ng-show="sen5">{{sen5}}. </span><span ng-show="sen6">{{sen6}}.</span><span ng-show="sen7">{{sen7}}.</span><span ng-show="sen8">{{sen8}}.</span><span ng-show="sen9">{{sen9}}.</span></p>
 
