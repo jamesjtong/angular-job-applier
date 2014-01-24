@@ -1,8 +1,4 @@
 /* Space out content a bit */
-.special-width {
-  width: 250px;
-  text-align: center;
-}
 
 body {
   padding-top: 20px;
@@ -39,7 +35,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 90%;
   }
 }
 .container-narrow > hr {

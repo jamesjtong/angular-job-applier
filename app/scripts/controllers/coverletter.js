@@ -2,11 +2,6 @@
 
 angular.module('ultimateJobApplierApp')
   .controller('CoverletterCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
     $scope.firstP = [{name: ''},{name: ''},{name: ''}];
     $scope.secondP = [{name: ''},{name: ''},{name: ''}];
     $scope.addP1 = function(){
@@ -19,6 +14,6 @@ angular.module('ultimateJobApplierApp')
       $scope.firstP.pop();
     };
     $scope.removeP2 = function(){
-      $scope.firstP.pop();
+      $scope.secondP.pop();
     };
   });
