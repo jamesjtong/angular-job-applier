@@ -55,7 +55,7 @@
       <p ng-show="yourPhoneNumber || yourEmail">Please consider reviewing my attached resume as it can provide more information. I hope to have an opportunity to further discuss my qualifications with your company. If you have any questions, please feel free to contact me by phone ({{yourPhoneNumber}}) or email({{yourEmail}}). Thank you for your consideration.</p><br>
       <div ng-show="yourName || yourPhoneNumber ||yourEmail">Sincerely,</div>
       <footer>
-        <div>{{yourName}}</div>
+        <div ng-show="yourName">{{yourName | capitalize}}</div>
         <div>{{yourPhoneNumber}}</div>
         <div>{{yourEmail}}</div>
       </footer>
