@@ -1,9 +1,9 @@
   <h1>Welcome to Cover Letter Generator</h1>
   <h4><em>Start filling out the form and watch the magic happen below</em></h4>
-
-  <div ng-controller="CoverletterCtrl">
+  <h6><em>Carefully review the job requirements for your target job and make sure you connect your qualifications to those requirements in your letter.  Include the skills, experience and education which line up with the job requirements. Make sure you include references to the specific accomplishments and results you achieved.</em></h6>
+  <div ng-controller="CoverletterCtrl" class="container">
     <p>
-      <ol>
+      <ol class="col-lg-4">
         <li>Company You are Applying for <input type="text" ng-model="companyName"></li>
         <li>Position <input type="text" ng-model="position"></li>
         <li>Your Name <input type="text" ng-model="yourName"></li>
@@ -16,6 +16,7 @@
           </ul>
           <ul>
             <button ng-click="addP1()">Add Additional sentence to Intro</button>
+            <button ng-click="removeP1()">Remove sentence field</button>
           </ul>
         </li>
 
@@ -25,6 +26,7 @@
           </ul>
           <ul>
             <button ng-click="addP1()">Add Additional sentence to Intro</button>
+            <button ng-click="removeP2()">Remove sentence field</button>
           </ul>
         </li>
 
@@ -32,7 +34,8 @@
         </li>
       </ol>
     </p>
-    <article><h4>Your generated Cover Letter:</h4>
+    <article class="col-lg-8">
+      <h4>Your generated Cover Letter:</h4>
       <p ng-show="companyName">Dear {{companyName}} Human Resource Department,</p><br>
 
       <p>

@@ -15,4 +15,10 @@ angular.module('ultimateJobApplierApp')
     $scope.addP2 = function(){
       $scope.secondP.push({name: ''});
     };
+    $scope.removeP1 = function(){
+      $scope.firstP.pop();
+    };
+    $scope.removeP2 = function(){
+      $scope.firstP.pop();
+    };
   });
