@@ -1,4 +1,5 @@
   <h1>Welcome to Cover Letter Generator</h1>
+
   <h4><em>Start filling out the form and watch the magic happen below</em></h4>
   <h6><em>Carefully review the job requirements for your target job and make sure you connect your qualifications to those requirements in your letter.  Include the skills, experience and education which line up with the job requirements. Make sure you include references to the specific accomplishments and results you achieved.</em></h6>
   <div ng-controller="CoverletterCtrl" class="row">
@@ -9,7 +10,7 @@
         <li>Your Name <input type="text" ng-model="yourName"></li>
         <li>Your Email <input type="text" ng-model="yourEmail"></li>
         <li>Your Phone Number ex: 666-666-6666 <input type="text" ng-model="yourPhoneNumber"></li>
-        <li> A few sentences about the company for your intro (think current news or something interesting).Why you are writing (your interest and general qualifications)
+        <li> A few sentences about the company for your intro (think current news or or why you are writing to them)
           <ul>
             <button ng-click="addP1()">Add Additional sentence to Intro</button>
             <button ng-click="removeP1()">Remove sentence field</button>
@@ -32,11 +33,15 @@
 
         </li>
 
+<!-- TODO ADD BUTTON TO GENERATE A FORMATTED COPY AND PASTABLE COVER LETTER -->
 <!--         <li><button ng-click="showCover()">Generate Formatted Cover Letter</button>
         </li> -->
       </ol>
     </div>
-    <div class="col-lg-8">
+
+
+<!-- GENERATED COVER LETTER STARTS HERE -->
+    <article class="col-lg-8 j-article">
       <h4>Your generated Cover Letter:</h4>
       <p ng-show="companyName">Dear {{companyName | capitalize}} Human Resource Department,</p><br>
 
@@ -62,4 +67,5 @@
         <div ng-show="yourEmail">{{yourEmail | capitalize}}</div>
       </footer>
     </div>
-  </div>
+  </article>
+<!-- GENERATED COVER LETTER ENDS HERE -->

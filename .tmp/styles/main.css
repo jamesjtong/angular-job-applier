@@ -95,3 +95,31 @@ body {
     border-bottom: 0;
   }
 }
+
+.shift-righter {
+  left: 10px;
+  color: teal;
+}
+
+.j-button {
+  margin: 5px;
+  border-style: groove;
+  border-width: medium;
+  border-color: grey;
+}
+
+.j-jumbo {
+  background-color: white;
+}
+
+.j-container {
+  border-style: solid;
+  border-width: 10px;
+  padding: 30px;
+}
+
+.j-article {
+  border-style: double;
+  border-width: 5px;
+  border-color: #5cb85c;
+}
