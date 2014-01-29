@@ -10,20 +10,22 @@ angular.module('ultimateJobApplierApp')
       'Walk me through your projects?',
       'What questions do you have for me?'
     ];
-    $scope.question = {value: ''};
-    $scope.getQuestion = function(){
-      $scope.question.value = $scope.interviewQuestions.shift();
-    };
-    
     $scope.counter = 0;
+    $scope.stopped = false;
+    $scope.buttonText='Stop';
     $scope.onTimeout = function(){
       $scope.counter++;
       mytimeout = $timeout($scope.onTimeout,1000);
     };
     var mytimeout = $timeout($scope.onTimeout,1000);
-    
-    $scope.stop = function(){
-      $timeout.cancel(mytimeout);
+    $scope.takeAction = function(){
+      if(!$scope.stopped){
+        $timeout.cancel(mytimeout);
+        $scope.buttonText='Resume';
+      } else {
+        mytimeout = $timeout($scope.onTimeout,1000);
+        $scope.buttonText='Stop';
+      }
+    $scope.stopped = !$scope.stopped;
     };
-            
   });
