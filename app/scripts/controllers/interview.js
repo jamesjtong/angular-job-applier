@@ -10,6 +10,10 @@ angular.module('ultimateJobApplierApp')
       'Walk me through your projects?',
       'What questions do you have for me?'
     ];
+    $scope.question = {value: ''};
+    $scope.getQuestion = function(){
+      $scope.question.value = $scope.interviewQuestions.shift();
+    };
     $scope.counter = 0;
     $scope.stopped = false;
     $scope.buttonText='Stop';
