@@ -112,15 +112,12 @@ body {
 }
 
 .j-container {
-  border-style: solid;
-  border-width: 10px;
+  border: 10px solid black;
   padding: 30px;
   margin-bottom: 50px;
 }
 
 .j-article {
-  border-style: double;
-  border-width: 5px;
-  border-color: #5cb85c;
-  border-width: 15px;
+  overflow: auto;
+  border: 15px double #5cb85c;
 }
