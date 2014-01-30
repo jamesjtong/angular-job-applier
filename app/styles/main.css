@@ -88,17 +88,22 @@ body {
   margin: 5px;
   border-style:groove;
   border-width: medium;
-  border-color: grey;
 }
 
 .j-jumbo {
   background-color: white;
 }
 
+/*.j-background {
+  background:url('../images/green.jpg');
+}*/
+
+
 .j-container {
   border-style: solid;
   border-width: 10px;
   padding: 30px;
+  margin-bottom:50px;
 }
 
 .j-article {

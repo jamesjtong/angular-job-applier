@@ -2,8 +2,8 @@
 
 angular.module('ultimateJobApplierApp')
   .controller('ThankyouCtrl', function ($scope) {
-    $scope.firstP = [{name: ''},{name: ''},{name: ''}];
-    $scope.secondP = [{name: ''},{name: ''},{name: ''}];
+    $scope.firstP = [{name: ''},{name: ''}];
+    $scope.secondP = [{name: ''},{name: ''}];
     $scope.addP1 = function(){
       $scope.firstP.push({name: ''});
     };
