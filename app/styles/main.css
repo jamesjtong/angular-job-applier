@@ -104,29 +104,18 @@ body {
   padding: 30px;
   margin-bottom:50px;
   background-color: white;
-  background-image: url('../images/notebook.jpg');
-  
+/*  text-shadow:1px 1px 4px #000000;*/
+  font-size: 17px;
 }
 
 .j-article {
   overflow: auto;
   border: 15px double #5cb85c;
-
+  background-image: url('../images/notebook2.jpg');
+  font-weight: bold;
 }
 
 .j-grad{
-background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  color-stop(0, #1F0705),
-  color-stop(1, #7563FF)
-);
-background-image: -o-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
-background-image: -moz-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
-background-image: -webkit-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
-background-image: -ms-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
-background-image: linear-gradient(to bottom, #1F0705 0%, #7563FF 100%);
-}
+background-image:  url('../images/wood-texture.jpg');
 
 
