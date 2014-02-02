@@ -103,11 +103,15 @@ body {
   border: 10px solid black;
   padding: 30px;
   margin-bottom:50px;
+  background-color: white;
+  background-image: url('../images/notebook.jpg');
+  
 }
 
 .j-article {
   overflow: auto;
   border: 15px double #5cb85c;
+
 }
 
 .j-grad{

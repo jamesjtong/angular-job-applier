@@ -17,6 +17,14 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/compiled/bootstrap-overrides.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/compiled/theme.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="css/compiled/index.css" type="text/css" media="screen" />  
+
+
     <!-- endbuild -->
   </head>
   <div class="navbar navbar-inverse navbar-fixed-top j-grad" role="navigation">
@@ -41,7 +49,7 @@
         </div>
     </div>
   </div>
-    <body ng-app="ultimateJobApplierApp">
+    <body ng-app="ultimateJobApplierApp" class="j-grad">
       <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -85,6 +93,8 @@
           <script src="scripts/controllers/interview.js"></script>
           <script src="scripts/filters/capitalize.js"></script>
           <script src="scripts/filters/formatTime.js"></script>
+          <script src="scripts/theme.js"></script>
+          <script type="text/javascript" src="scripts/index-slider.js"></script>
           <!-- endbuild -->
     </body>
   </div>
