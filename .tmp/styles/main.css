@@ -123,10 +123,10 @@ body {
 .j-article {
   overflow: auto;
   border: 15px double #5cb85c;
-  /*background-image: url('../images/notebook2.jpg');*/
+  background-image: url('../images/notebook2.jpg');
   font-weight: bold;
 }
 
 .j-grad {
-  /*background-image:  url('../images/wood-texture.jpg');*/
+  background-image: url('../images/wood-texture.jpg');
 }
