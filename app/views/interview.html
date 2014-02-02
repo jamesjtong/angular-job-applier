@@ -5,6 +5,10 @@
 <br><br><br><br><br>
 
 <header>
+  <div ng-repeat="quest in questionRecords track by $index">
+    <div>{{quest}}</div>
+  </div>
 
- <div> Total Time Spent on This Interview {{counter|formatTime}}
+
+  <div> Total Time Spent on This Interview {{counter|formatTime}}
     <button ng-click="takeAction()">{{buttonText}}</button>    

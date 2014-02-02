@@ -11,10 +11,15 @@ angular.module('ultimateJobApplierApp')
       'What questions do you have for me?'
     ];
     $scope.question = {value: ''};
+    $scope.questionRecords = [];
     $scope.getQuestion = function(){
+      $scope.questionRecords.push($scope.question.value);
+      $scope.questionRecords.push($scope.counter-$scope.storedCounter);
       $scope.question.value = $scope.interviewQuestions.shift();
+      $scope.storedCounter = $scope.counter;
     };
     $scope.counter = 0;
+    $scope.storedCounter = 0;
     $scope.stopped = false;
     $scope.buttonText='Stop';
     $scope.onTimeout = function(){
