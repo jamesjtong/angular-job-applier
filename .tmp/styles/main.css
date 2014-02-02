@@ -121,3 +121,7 @@ body {
   overflow: auto;
   border: 15px double #5cb85c;
 }
+
+.j-grad {
+  background-image: linear-gradient(to bottom, #1F0705 0%, #7563FF 100%);
+}

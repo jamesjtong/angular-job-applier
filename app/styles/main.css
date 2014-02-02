@@ -109,3 +109,20 @@ body {
   overflow: auto;
   border: 15px double #5cb85c;
 }
+
+.j-grad{
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #1F0705),
+  color-stop(1, #7563FF)
+);
+background-image: -o-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
+background-image: -moz-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
+background-image: -webkit-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
+background-image: -ms-linear-gradient(bottom, #1F0705 0%, #7563FF 100%);
+background-image: linear-gradient(to bottom, #1F0705 0%, #7563FF 100%);
+}
+
+
