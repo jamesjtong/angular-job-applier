@@ -14,7 +14,9 @@ angular.module('ultimateJobApplierApp')
     $scope.questionRecords = [];
     $scope.getQuestion = function(){
       $scope.questionRecords.push($scope.question.value);
-      $scope.questionRecords.push($scope.counter-$scope.storedCounter);
+      if ($scope.questionRecords.length > 1){
+        $scope.questionRecords.push($scope.counter-$scope.storedCounter+' seconds taken to answer');
+      }
       $scope.question.value = $scope.interviewQuestions.shift();
       $scope.storedCounter = $scope.counter;
     };

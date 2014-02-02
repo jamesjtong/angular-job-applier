@@ -115,6 +115,14 @@ body {
   font-weight: bold;
 }
 
+.j-times-taken{
+  background-color: white;
+  text-align: right;
+}
+
+.j-times-taken:nth-child(odd) {
+  color:blue;
+}
 .j-grad{
   background-image:  url('../images/wood-texture.jpg');
 }
