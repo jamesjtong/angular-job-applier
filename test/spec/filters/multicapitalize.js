@@ -11,9 +11,9 @@ describe('Filter: multiCapitalize', function () {
     multiCapitalize = $filter('multiCapitalize');
   }));
 
-  it('should return the input prefixed with "multiCapitalize filter:"', function () {
-    var text = 'angularjs';
-    expect(multiCapitalize(text)).toBe('multiCapitalize filter: ' + text);
+  it('should return the input prefixed with "multiCapitalize filter:" it capitalizes all words', function () {
+    var text = 'angularjs is awesommmmeee';
+    expect(multiCapitalize(text)).toBe('Angularjs Is Awesommmmeee');
   });
 
 });

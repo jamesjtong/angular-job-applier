@@ -16,7 +16,11 @@ describe('Controller: InterviewCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should start off with 6 interview questions', function () {
+    expect(scope.interviewQuestions.length).toBe(6);
   });
+  it('should have a counter that starts at 0', function () {
+    expect(scope.counter).toEqual(0);
+  });
+
 });
