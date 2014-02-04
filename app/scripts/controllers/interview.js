@@ -11,6 +11,7 @@ angular.module('ultimateJobApplierApp')
       'What questions do you have for me?'
     ];
     $scope.question = {value: ''};
+   
     $scope.questionRecords = [];
     $scope.getQuestion = function(){
       $scope.questionRecords.push($scope.question.value);
@@ -37,6 +38,6 @@ angular.module('ultimateJobApplierApp')
         mytimeout = $timeout($scope.onTimeout,1000);
         $scope.buttonText='Stop';
       }
-    $scope.stopped = !$scope.stopped;
+      $scope.stopped = !$scope.stopped;
     };
   });

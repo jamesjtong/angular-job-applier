@@ -14,22 +14,14 @@
         <li>Your Email <input type="text" ng-model="yourEmail"></li>
         <li>Your Phone Number ex: 666-666-6666 <input type="text" ng-model="yourPhoneNumber"></li>
         <li> Sentences about your Converation
-          <ul>
             <button ng-click="addP1()">Add Sentence Field</button>
             <button ng-click="removeP1()">Remove Sentence Field</button>
-          </ul>
-          <ul ng-repeat="sen in firstP">
-            <li><input type="text" ng-model="sen.name"></li>
-          </ul>
+            <input type="text" ng-model="sen.name" ng-repeat="sen in firstP">
         </li>
         <li> Reasons why this company is perfect for you
-          <ul>
             <button ng-click="addP2()">Add Sentence Field</button>
             <button ng-click="removeP2()">Remove Sentence Field</button>
-          </ul>
-          <ul ng-repeat="sen in secondP">
-            <li><input type="text" ng-model="sen.name"></li>
-          </ul>
+            <input type="text" ng-model="sen.name" ng-repeat="sen in secondP">
         </li>
 
 <!-- TODO ADD BUTTON TO GENERATE A FORMATTED COPY AND PASTABLE COVER LETTER -->
@@ -50,15 +42,15 @@
           <span ng-show="firstP[$index].name"> {{sen.name | capitalize}}.&nbsp</span>
         </span>
         <span ng-show="position">In addition, thank you for sharing your insight on the {{position | multiCapitalize}} position. </span>
-
       </p>
 
       <p ng-show="company">{{company | multiCapitalize}} seems like the ideal company to work for.
         <span ng-repeat="sen in secondP">
           <span ng-show="secondP[$index].name"> {{sen.name | capitalize}}.&nbsp</span>
         </span>
+        <span ng-show ="company"> However, most of the time I would be talking about how great the people are there. Everyone I met at {{company | multiCapitalize}} was super smart, welcoming, and friendly. I look forward to hearing from you soon. </span>
+      </p><br>
 
-      <span ng-show ="company"> However, most of the time I would be talking about how great the people are there. Everyone I met at {{company | multiCapitalize}} was super smart, welcoming, and friendly. I look forward to hearing from you soon.</p><br>
       <div ng-show="yourName || yourPhoneNumber ||yourEmail">Thank you,</div>
       <footer>
         <div ng-show="yourName">{{yourName | multiCapitalize}}</div>
