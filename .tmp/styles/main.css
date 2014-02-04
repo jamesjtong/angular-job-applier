@@ -139,3 +139,7 @@ body {
 .j-grad {
   background-image: url('../images/wood-texture.jpg');
 }
+
+.ng-invalid {
+  background-color: red;
+}
