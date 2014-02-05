@@ -11,9 +11,13 @@ describe('Filter: formatTime', function () {
     formatTime = $filter('formatTime');
   }));
 
-  it('should return the input prefixed with "formatTime filter:"', function () {
-    var text = 'angularjs';
-    expect(formatTime(text)).toBe('formatTime filter: ' + text);
+  it('takes in a string with a number greater than 100 and outputs a into xx:xx format', function () {
+    var text = '100';
+    expect(formatTime(text)).toEqual('01:40');
   });
 
+  it('takes in a string with a number less than 60 and outputs a into xx:xx format', function () {
+    var text = '30';
+    expect(formatTime(text)).toEqual('00:30');
+  });
 });

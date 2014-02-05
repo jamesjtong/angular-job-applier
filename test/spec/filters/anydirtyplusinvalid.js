@@ -12,8 +12,8 @@ describe('Filter: anyDirtyPlusInvalid', function () {
   }));
 
   it('should return the input prefixed with "anyDirtyPlusInvalid filter:"', function () {
-    var text = 'angularjs';
-    expect(anyDirtyPlusInvalid(text)).toBe('anyDirtyPlusInvalid filter: ' + text);
+    var text = 's';
+    expect(anyDirtyPlusInvalid(text)).toBe(false);
   });
 
 });

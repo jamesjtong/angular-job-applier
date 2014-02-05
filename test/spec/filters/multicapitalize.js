@@ -16,4 +16,9 @@ describe('Filter: multiCapitalize', function () {
     expect(multiCapitalize(text)).toBe('Angularjs Is Awesommmmeee');
   });
 
+  it('should ignore words that start with a number',function(){
+    var text='33jam 3a aa';
+    expect(multiCapitalize(text)).toEqual('33jam 3a Aa');
+  });
+
 });

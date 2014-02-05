@@ -16,7 +16,35 @@ describe('Controller: ThankyouCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('has a first paragraph which starts off with 2 input fields', function () {
+    expect(scope.firstP.length).toBe(2);
+  });
+  it('has a second paragraph which starts off with 2 input fields', function () {
+    expect(scope.secondP.length).toBe(2);
+  });
+  describe('the functions in ThankyouCtrl',function(){
+    it('P1 has a way of adding input fields through #addP1',function(){
+      scope.addP1();
+      expect(scope.firstP.length).toBe(3);
+      scope.addP1();
+      scope.addP1();
+      expect(scope.firstP.length).toBe(5);
+    });
+    it('P1 has a way of removing input fields through #removeP1',function(){
+      scope.removeP1();
+      expect(scope.firstP.length).toBe(1);
+    });
+    it('P2 has a way of adding input fields through #addP2',function(){
+      scope.addP2();
+      expect(scope.secondP.length).toBe(3);
+      scope.addP2();
+      scope.addP2();
+      expect(scope.secondP.length).toBe(5);
+    });
+    it('P2 has a way of removing input fields through #removeP2',function(){
+      scope.removeP2();
+      expect(scope.secondP.length).toBe(1);
+    });
+
   });
 });
