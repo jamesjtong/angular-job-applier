@@ -25,5 +25,10 @@ describe('Filter: capitalize', function () {
     var text = '1angularjs s';
     expect(capitalize(text)).toBe('1angularjs s');
   });
+
+  it('should capitalize all words if :"multi" parameter is passed in',function(){
+    var text = 'mary had a little lamb';
+    expect(capitalize(text), "multi").toBe('Mary had A Little Lamb');
+  });
   
 });
