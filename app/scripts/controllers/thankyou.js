@@ -16,4 +16,11 @@ angular.module('ultimateJobApplierApp')
     $scope.removeP2 = function(){
       $scope.secondP.pop();
     };
+    $scope.generateLetter = function() {
+        var articleText = angular.element('article').text();
+        return articleText;
+    };
+    $scope.doSomething = function () {
+        console.log('NgClip...');
+    };
   });
