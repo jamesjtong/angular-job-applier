@@ -16,4 +16,12 @@ angular.module('ultimateJobApplierApp')
     $scope.removeP2 = function(){
       $scope.secondP.pop();
     };
+    $scope.getTextToCopy = function() {
+        return 'ngClip is awesome!';
+    };
+    
+    $scope.doSomething = function () {
+        console.log('NgClip...');
+    };
+
   });
