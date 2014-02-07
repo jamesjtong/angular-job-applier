@@ -3,7 +3,7 @@
 describe('Filter: capitalize', function () {
 
   // load the filter's module
-  beforeEach(module('ultimateJobApplierApp'));
+  beforeEach(module('ultimateJobApplierApp','ngClipboard'));
 
   // initialize a new instance of the filter before each test
   var capitalize;
@@ -28,7 +28,7 @@ describe('Filter: capitalize', function () {
 
   it('should capitalize all words if :"multi" parameter is passed in',function(){
     var text = 'mary had a little lamb';
-    expect(capitalize(text), "multi").toBe('Mary had A Little Lamb');
+    expect(capitalize(text, 'multi')).toBe('Mary Had A Little Lamb');
   });
   
 });
