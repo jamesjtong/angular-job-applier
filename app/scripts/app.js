@@ -25,6 +25,10 @@ angular.module('ultimateJobApplierApp', [
         templateUrl: 'views/interview.html',
         controller: 'InterviewCtrl'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
