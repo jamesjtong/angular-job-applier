@@ -25,6 +25,10 @@ angular.module('ultimateJobApplierApp', [
         templateUrl: 'views/interview.html',
         controller: 'InterviewCtrl'
       })
+      .when('/companies', {
+        templateUrl: 'views/companies.html',
+        controller: 'CompaniesCtrl'
+      })
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
