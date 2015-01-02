@@ -8,7 +8,11 @@ angular.module('ultimateJobApplierApp', [
   'ngClipboard',
   'restangular',
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
+     // Enable CORS
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
