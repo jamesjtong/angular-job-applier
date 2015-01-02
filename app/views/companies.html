@@ -1,1 +1,21 @@
 List of Companies
+<pre>companies {{companies}}</pre>
+<pre>selectedCompany {{selectedCompany}}</pre>
+<br><br>
+<select ng-model="selectedCompany" ng-options="company.name for company in companies">
+</select>
+<br>
+<br><br>
+<select ng-model="selectedCompany" ng-options="company as company.name for company in companies">
+</select>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<pre>myStats {{myStats}}</pre>
+<pre>endpoint {{endpoint}}</pre>

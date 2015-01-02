@@ -36,4 +36,8 @@ angular.module('ultimateJobApplierApp', [
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .constant('ENV', {
+    'name':         'production',
+    'apiEndpoint':  'localhost:3000'
+  })
