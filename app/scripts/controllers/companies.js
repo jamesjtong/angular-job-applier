@@ -48,4 +48,15 @@ angular.module('ultimateJobApplierApp')
     $scope.selectedCompany = $scope.companies[0];
 
     var endpoint = ENV.apiEndpoint;
+
+    var baseUsers = Restangular.allUrl('users', endpoint+'users');
+    // Restangular.allUrl('users', endpoint+'users').getList();
+
+    baseUsers.getList().then(function(users) {
+      console.log(users);
+      $scope.allUsers = users;
+    });
+
+    // GET to http://www.google.com/1 You set the URL in this case
+    // Restangular.oneUrl('users', 'http://www.google.com/1').get();
   });
