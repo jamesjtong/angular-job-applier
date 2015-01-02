@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ultimateJobApplierApp')
-  .controller('CompaniesCtrl', function ($scope, ENV) {
+  .controller('CompaniesCtrl', function ($scope, ENV, Restangular) {
     //example for ng options with an array of objects
     $scope.companies = [
       {

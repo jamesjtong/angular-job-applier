@@ -5,7 +5,8 @@ angular.module('ultimateJobApplierApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngClipboard'
+  'ngClipboard',
+  'restangular',
 ])
   .config(function ($routeProvider) {
     $routeProvider
